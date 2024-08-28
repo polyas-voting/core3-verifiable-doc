@@ -14,3 +14,4 @@ at high security requirements, including end-to-end verifiability.
  * [POLYAS 3.0 Verifiable E-Voting System (pdf)](pdf/polyas3.0-verifiable.pdf)
 
 
+ * [Polyas-Core3 Second Device Protocol (pdf)](pdf/second-device-spec.pdf)
