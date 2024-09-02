@@ -50,8 +50,8 @@ the following security features:
    This document provides an overview of the ballot audit protocol and details
    required for implementing an independent ballot audit application,
    compatible with the Polyas Core 3 Verifiable version as documented in the
-   [[Polyas-Core3 Second Device Protocol]](pdf/second-device-spec.pdf) (see
-   above).  The ballot audit process described in this document instantiates
+   [POLYAS 3.0 Verifiable E-Voting System](pdf/polyas3.0-verifiable.pdf)
+   (see above).  The ballot audit process described in this document instantiates
    the method presented in [[Johannes Müller and Tomasz Truderung, _A Protocol
    for Cast-as-Intended Verifiability with a Second Device_,
    arxiv:2304.09456]](https://arxiv.org/pdf/2304.09456).
