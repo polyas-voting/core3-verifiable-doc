@@ -634,7 +634,7 @@ As mentioned in the introduction, the ballot audit process described in this
 document implements the method presented in [1], [2]. We augmented, however, 
 this method with the following optimisation.
 
-In [1], [2], the voting device sends $r^* = x + r$ to the audit device
+In [1], [2], the voting device sends $r^\ast = x + r$ to the audit device
 (via the QR-code); this value is then used to decode the voter's choice
 in the last step of the protocol.  In the version of the method
 presented here, the QR code contains, instead, the `randomCoinSeed`
@@ -652,14 +652,14 @@ However, to make this optimisation work, we need to first make the following
 change int the protocol:
 
 First, instead of selecting a random encryption coin $r$ and then computing
-$r^* = x + r$, the first device selects random $r^*$ and then computes
-$r$ such that $r^* = x + r$ (and uses r as the random encryption coin).
+$r^\ast = x + r$, the first device selects random $r^\ast$ and then computes
+$r$ such that $r^\ast = x + r$ (and uses r as the random encryption coin).
 Justification for this step is that the resulting distributions are
 identical (note that the computations are done here modulo $q$). 
 
 Second, with the above modification, we can now apply the
 described above optimisation: instead of randomly choosing a sequence
-$r^*$, we randomly choose a seed, and generate $r^*$ from this seed.
+$r^\ast$, we randomly choose a seed, and generate $r^\ast$ from this seed.
 With this, we can include the seed (which is of constant length
 independently of the size of the cipher text) in the QR code.
 
