@@ -32,8 +32,28 @@ the following security features:
 
  * [POLYAS 3.0 Verifiable E-Voting System (pdf)](pdf/polyas3.0-verifiable.pdf)
 
+   This document offers a detailed, protocol-level description of a
+   variant of the POLYAS 3.0 E-Voting System that features universal
+   verifiability and optional individual verifiability (cast-as-intended)
+   through the use of a secondary voter device.
+   The document details the protocol structure and the intended security
+   properties. It assigns specific tasks to the Election Council, the entity
+   responsible for organizing and overseeing the election process, to support
+   various security aspects, such as universal verifiability. Additionally, a
+   detailed specification of the verification procedure is provided.
+
+   The described variant does not include key sharing and distributed decryption.
 
  * [Polyas-Core3 Second Device Protocol (pdf)](pdf/second-device-spec.pdf)
+
+   This document provides an overview of the ballot audit protocol and details
+   required for implementing an independent ballot audit application,
+   compatible with the Polyas Core 3 Verifiable version as documented in the
+   [[Polyas-Core3 Second Device Protocol]](pdf/second-device-spec.pdf) (see
+   above).  The ballot audit process described in this document instantiates
+   the method presented in [[Johannes Müller and Tomasz Truderung, _A Protocol
+   for Cast-as-Intended Verifiability with a Second Device_,
+   arxiv:2304.09456]](https://arxiv.org/pdf/2304.09456).
 
 
  ### Other relevant documentation (external links)
