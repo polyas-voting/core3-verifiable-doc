@@ -44,8 +44,8 @@ The overall process of ballot audit works as follows.
 2. **Login:** The voter is prompted to authenticate theirself by providing
    a _time-based one-time password_ (TOTP), displayed on the first device. This application
    passes this one-time password to the vote server, along with the
-   voter identifier, a nonce provided inside the QR code, and a *commitment $c$ to
-   the ZKP challenge* (which is a part of the interactive
+   voter identifier, a nonce provided inside the QR code, and a commitment $c$ to
+   the ZKP challenge (which is a part of the interactive
    zero-knowledge proof exchanged between this application and the vote
    server).
    
