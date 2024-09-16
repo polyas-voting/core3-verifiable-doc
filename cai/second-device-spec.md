@@ -20,11 +20,12 @@ protocol and the details necessary for the implementation._
 The ballot audit process described in this document implements the method
 presented in [1], [2], with an optimisation presented in the next section.
 
-This protocol is compatible with the version of Polyas Core 3 Verifiable 
-e-voting system, as presented in [3] (_POLYAS 3.0 Verifiable E-Voting System,
-Version 1.2.0_). In particular, it shares the underlying cryptographic setting
-([3], Section A.2) and uses some algorithms presented there. The reader of this
-document will need to consult some parts of [3].
+This protocol is compatible with the version of Polyas Core 3 Verifiable
+e-voting system, as presented in [[3]](../pdf/polyas3.0-verifiable.pdf).
+In particular, it shares the underlying
+cryptographic setting ([3], Section A.2) and uses some algorithms presented
+there. The reader of this document will need to consult some parts of
+[[3]](../pdf/polyas3.0-verifiable.pdf).
 
 ## The Application Flow
 
@@ -43,8 +44,8 @@ The overall process of ballot audit works as follows.
 2. **Login:** The voter is prompted to authenticate theirself by providing
    a _time-based one-time password_ (TOTP), displayed on the first device. This application
    passes this one-time password to the vote server, along with the
-   voter identifier, a nonce provided inside the QR code, and a _commitment $c$ to
-   the ZKP challenge_ (which is a part of the interactive
+   voter identifier, a nonce provided inside the QR code, and a *commitment $c$ to
+   the ZKP challenge* (which is a part of the interactive
    zero-knowledge proof exchanged between this application and the vote
    server).
    
@@ -240,7 +241,8 @@ see the [API documentation](#post-restlogin) for details.
 Fields `voterId` and `nonce` are taken from the QR-code (see above), while the `password`
 is provided by the voter.
 The filed `challengeCommitment` should contain value $c$, computed as 
-follows (see [3], Appendix A.2, for the used cryptographic setting and notation): 
+follows (see [[3]](../pdf/polyas3.0-verifiable.pdf), 
+Appendix A.2, for the used cryptographic setting and notation): 
 
 Sample random $e,r ∈ Z_q$ and compute $c = k^r g^e$, where
 $k$ is the pre-defined commitment key (an elliptic curve point given by) 
@@ -625,7 +627,7 @@ as described in section _Checking the acknowledgement_.
 * [2] Johannes Müller, Tomasz Truderung, _A Protocol for Cast-as-Intended Verifiability with a Second Device_,
   [arXiv:2304.09456](https://arxiv.org/abs/2304.09456)
 
-* [3] _POLYAS 3.0 Verifiable E-Voting System, Version 1.2.0_
+* [3] [_POLYAS 3.0 Verifiable E-Voting System, Version 1.3.2_](../pdf/polyas3.0-verifiable.pdf)
 
 
 ## APPENDIX 1: An Optimisation 
