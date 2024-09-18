@@ -1,6 +1,6 @@
 # Polyas-Core3 Second Device Protocol
 
-**Version 1.1** 
+**Version 1.2-SNAPSHOT** 
 
 Tomasz Truderung • POLYAS GmbH
 
@@ -591,9 +591,14 @@ should clearly communicate the recorder voter's choice (and nothing more).
 ### The Receipt
 
 The signed acknowledgement included in the initial message (login response),
-along with the computed ballot fingerprint, can be transformed to the following
-format offered to the voter for download or given directly to the auditors (who
-can then make sure that the voter's ballot is included in the tally).
+along with the computed ballot fingerprint, can be formatted and offered for
+download or given directly to the auditors (who can then make sure that the
+voter's ballot is included in the tally).
+
+**For compatibility with the tools for universal verification**, the receipt
+should be offered as a PDF document, containing `FINGERPRINT` and `SIGNATURE`
+blocks, as in the following example (these text blocks are to be extracted by
+the universal verifiability tools).
 
 ```
 Project ID: bfced618-34aa-4b78-ba5b-d21dc04a1a7e
@@ -614,6 +619,11 @@ c8dbb3b79e5c17a90913dcb4ba583ea90e706891d38278745c1b4856f88d045c
 38b840d4fd427291187c250b2ed7bc846fa25440e98d3e9832f2047e52bc5207
 -----END SIGNATURE-----
 ```
+
+> **Remark**: The related task of the universal verifiability tool is to, first,
+> check the signature and, second, if the signature is correct, check that the
+> ballot with this fingerprint is included in the ballot box. This verification
+> step is described in [[3]](../pdf/polyas3.0-verifiable.pdf), Section B.2.
 
 Note that we assume here that this acknowledgement has been already checked,
 as described in section _Checking the acknowledgement_.
