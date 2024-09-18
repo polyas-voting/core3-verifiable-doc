@@ -294,10 +294,20 @@ such as the following **example response** (corresponding to the above example r
 }
 ```
 
-The response contains further election metadata, the authentication token
-to be used in the successive calls and the _initial message_, in 
-JSON format. This initial message (after deserialization) is of type
-[SecondDeviceInitialMsg](#seconddeviceinitialmsg) and looks as follows:
+The response contains further election metadata, the identifier of the voter
+`ballotVoterId`, used by the voting system to identify the voter, the
+authentication token to be used in the successive calls and the _initial
+message_, in JSON format (see below). 
+
+Importantly, `ballotVoterId` may be different than the login identifier (in
+order to provide voters' anonymity). Therefore, **this identifier should be
+clearly displayed to the voter**, which gives the voter the opportunity to make
+sure that the ballot under audit is registered under his/her unique ID (the same
+voter's ID should be also included in the election invitation).
+
+The initial message, as already mentioned, is in the JSON format. After
+deserialization, it is of type [SecondDeviceInitialMsg](#seconddeviceinitialmsg) and
+looks as follows:
 
 ```
 {
