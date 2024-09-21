@@ -30,7 +30,7 @@ the following security features:
 
 ### The content of this repository
 
- * [POLYAS 3.0 Verifiable E-Voting System (pdf)](pdf/polyas3.0-verifiable.pdf)
+ * [**POLYAS 3.0 Verifiable E-Voting System (pdf)**](pdf/polyas3.0-verifiable.pdf)
 
    This document offers a detailed, protocol-level description of a
    variant of the POLYAS 3.0 E-Voting System that features universal
@@ -44,7 +44,7 @@ the following security features:
 
    The described variant does not include key sharing and distributed decryption.
 
- * [Polyas-Core3 Second Device Protocol (current)](cai/second-device-spec.md)
+ * [**Polyas-Core3 Second Device Protocol (current)**](cai/second-device-spec.md)
    | [Snapshot PDF v1.1](pdf/second-device-spec.pdf)
 
    This document provides an overview of the ballot audit protocol and details
