@@ -248,6 +248,7 @@ Sample random $e,r ∈ Z_q$ and compute $c = k^r g^e$, where
 $k$ is the pre-defined commitment key (an elliptic curve point given by) 
 $k$ = `0373744f99d31509eb5f8caaabc0cc3fab70e571a5db4d762020723b9cd6ada260`
 
+> [!NOTE]
 > The value of the commitment key $k$ is generated using the method
 > described in Appendix A.6 of [3], section "Selecting independent generators", 
 > where the value of parameter `seed` is set to `"pedersen-commitment-key"`. 
@@ -630,7 +631,8 @@ c8dbb3b79e5c17a90913dcb4ba583ea90e706891d38278745c1b4856f88d045c
 -----END SIGNATURE-----
 ```
 
-> **Remark**: The related task of the universal verifiability tool is to, first,
+> [!NOTE]
+> The related task of the universal verifiability tool is to, first,
 > check the signature and, second, if the signature is correct, check that the
 > ballot with this fingerprint is included in the ballot box. This verification
 > step is described in [[3]](../pdf/polyas3.0-verifiable.pdf), Section B.2.
