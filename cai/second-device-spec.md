@@ -147,13 +147,12 @@ process, in more details, looks as follows.
 2. The second-device application should be pre-configured with this
    fingerprint. 
    
-    > [!IMPORTANT]
-    > With this configuration, the second-device application should not accept
-    > any data which does not match this fingerprint (by issuing the fingerprint, the
-    > e-voting system commits to the content of the public parameters and by
-    > having this fingerprint preconfigured the second-device makes sure that the
-    > data exchanged with the e-voting system uses public parameters which are
-    > committed to).
+    With this configuration, the second-device application should not accept
+    any data which does not match this fingerprint (by issuing the fingerprint the
+    e-voting system commits to the content of the public parameters and by
+    having this fingerprint preconfigured the second-device makes sure that the
+    data exchanged with the e-voting system uses public parameters which are
+    committed to).
 
 3. In the audit phase — after the election has been tallied and the verification
    package produced — it should be checked that the content of the verification
