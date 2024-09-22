@@ -56,9 +56,13 @@ the following security features:
    for Cast-as-Intended Verifiability with a Second Device_,
    arxiv:2304.09456]](https://arxiv.org/pdf/2304.09456).
 
+ * [**Secure Bulletin Boards**](sbb/secure-bulletin-boards.md)
+
+   This document provides an overview the technical details of the
+   _secure bulletin boards_, the append-only storage mechanism used by
+   all versions of the Polyas Core3.
 
  ### Other relevant documentation (external links)
-
 
   * Johannes Müller and Tomasz Truderung, _A Protocol for Cast-as-Intended Verifiability with a Second Device_,
   [arxiv:2304.09456](https://arxiv.org/pdf/2304.09456)
