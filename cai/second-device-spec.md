@@ -566,9 +566,9 @@ ballot with the help of `randomCoins`, computed above. For this,
 we compute the sequence of group elements
 $\displaystyle c_i = \frac{w_i \cdot Y_i}{h^{r_i}}$, for $i \in [0..n)$, where
 
-- $w_i = $ `ballot.encryptedChoice.ciphertexts[i].y`,
-- $Y_i = $ `factorY[i]`,
-- $r_i = $ `randomCoins[i]`, as defined above.
+- $w_i =$ `ballot.encryptedChoice.ciphertexts[i].y`,
+- $Y_i =$ `factorY[i]`,
+- $r_i =$ `randomCoins[i]`, as defined above.
 
 We then map this sequence of the group elements (elliptic curve points)
 to a sequence of numbers in $Z_q$, using the decoding algorithm defined in [3], Appendix A.2.1.
