@@ -58,7 +58,7 @@ the following security features:
    arxiv:2304.09456]](https://arxiv.org/pdf/2304.09456).
 
    > The previous version of this document, for the system variant without
-   > support for everlasting privacy is here:  
+   > support for everlasting privacy is here:
    > [POLYAS 3.0 Verifiable E-Voting System, v.1.3.2 (pdf)](pdf/polyas3.0-verifiable-v1.3.2.pdf)
    > with the complementing document describing the second device protocol:
    > [Second Device Protocol (PDF) v1.1](pdf/second-device-spec.pdf)
