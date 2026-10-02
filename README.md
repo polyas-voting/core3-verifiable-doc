@@ -71,7 +71,18 @@ the following security features:
    _secure bulletin boards_, the append-only storage mechanism used by
    all versions of the Polyas Core3.
 
- ### Other relevant documentation (external links)
+
+### Key sharing and threshold decryption
+
+POLYAS 3.0 Verifiable E-Voting System supports configurations with **key
+sharing and threshold decryption**. The details of the cryptographic method
+used in this variant are described in a [**separate
+document**](https://github.com/polyas-voting/polyas-core3-crypto/blob/main/crypto-elgamal/doc/key-sharing.pdf)
+(in the [polyas-core3-crypto
+project](https://github.com/polyas-voting/polyas-core3-crypto/)).
+
+
+### Other relevant documentation (external links)
 
   * Johannes Müller and Tomasz Truderung, 
     _A Protocol for Cast-as-Intended Verifiability with a Second Device_,
