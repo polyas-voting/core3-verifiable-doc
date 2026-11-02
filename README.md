@@ -36,7 +36,7 @@ the following security features:
 
 ### The content of this repository
 
- * [**POLYAS 3.0 Verifiable E-Voting System, v.2.3 (pdf)**](pdf/polyas3.0-verifiable-v2.e.pdf)
+ * [**POLYAS 3.0 Verifiable E-Voting System, v.2.3 (pdf)**](pdf/polyas3.0-verifiable-v2.3.pdf)
 
    This document offers a detailed, protocol-level description of a variant
    of the POLYAS 3.0 E-Voting System that features universal verifiability,
